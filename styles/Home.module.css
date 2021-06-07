@@ -30,10 +30,9 @@
 }
 
 .user-list{
-  top: 10vh;
   overflow:hidden;
   overflow-y: scroll;
-  height:70vh;
+  height:65vh;
   scroll-behavior: smooth;
   /* position:fixed; */
   -ms-overflow-style: none;  /* IE and Edge */
@@ -98,8 +97,9 @@
   display: flex;
   width: 100vw;
   margin: 0 auto;
-  top: 15vh;
-  position: absolute;
+  height: 4rem;
+  margin: 2rem 0;
+  position: relative;
   flex-grow: 1;
   justify-content: center;
 }
@@ -335,15 +335,12 @@
   }
   .form-wrapper{
     flex-direction: column;
-    top:10vh;
   }
   .form-wrapper div{
     margin: 1rem 0;
   }
   .user-list{
-    top:15vh;
     overflow-x: scroll;
-    height:60vh;
   }
   .user-list-item{
     width: 85vw;
