@@ -34,7 +34,7 @@
   overflow-y: scroll;
   height:65vh;
   scroll-behavior: smooth;
-  /* position:fixed; */
+  margin-right: 1rem;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;
   scroll-snap-align:start;
@@ -314,11 +314,16 @@
   align-self: center;
 }
 
+.sub-heading{
+  display:none;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+  
   .container{
     padding:unset;
   }
@@ -341,16 +346,28 @@
   }
   .user-list{
     overflow-x: scroll;
+    margin-right: 1rem;
   }
   .user-list-item{
-    width: 85vw;
+    width: 100%;
     margin: 1rem 0.1rem;
+    flex-wrap: unset;
+    flex-direction: column;
+    padding: 0.5rem;
+    height:max-content;
   }
-  .user-list-item span{
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    text-align: center;
+  .user-list-item.heading{
+    display:none;
+  }
+  .user-list-item span:not(.sub-heading){
+    width:80vw;
+    text-align: inherit;
+    height:max-content;
+    margin: 0.1rem 0;
+  }
+  .sub-heading{
+    width:20vw;
+    display:inline-block;
   }
   .search-box input{
     width: 70%;
@@ -366,5 +383,11 @@
   }
   .search-box button{
     width: 25%;
+  }
+  
+}
+@media (min-width: 600px) {
+  .user-list{
+    margin-right: 2rem;
   }
 }

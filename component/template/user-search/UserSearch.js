@@ -73,7 +73,7 @@ const UserSearch = ({list}) => {
             </div>
         </div>
         <section className={styles['user-list']}>
-            <div className={styles['user-list-item']}>
+            <div className={`${styles['user-list-item']} ${styles['heading']}`}>
                 <span><b>Name</b></span>
                 <span><b>UserName</b></span>
                 <span><b>Email</b></span>
@@ -82,9 +82,9 @@ const UserSearch = ({list}) => {
                 userList.map(({email, id, name, username}, key) => (
                     <a key={`user-${key}`} href={`/user-detail?id=${id}`} target="_blank" rel="noopener noreferrer">
                             <div className={styles['user-list-item']}>
-                                <span>{name}</span>
-                                <span>{username}</span>
-                                <span onClick={()=>handleEmailClick(email)}>{email}</span>
+                                <span><span className={styles['sub-heading']}><b>Name :</b></span><span>{name}</span></span>
+                                <span><span className={styles['sub-heading']}><b>User name: </b></span><span>{username}</span></span>
+                                <span><span className={styles['sub-heading']}><b>Email: </b></span><span onClick={()=>handleEmailClick(email)}>{email}</span></span>
                             </div>
                         </a>
                     
