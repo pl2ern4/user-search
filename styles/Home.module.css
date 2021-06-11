@@ -40,6 +40,9 @@
   scroll-snap-align:start;
   position:relative;
 }
+.user-list div:nth-of-type(1){
+  margin-top: unset;
+}
 
 .user-list::-webkit-scrollbar {
   display: none;
