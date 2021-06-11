@@ -32,7 +32,7 @@
 .user-list{
   overflow:hidden;
   overflow-y: scroll;
-  height:65vh;
+  height:70vh;
   scroll-behavior: smooth;
   margin-right: 1rem;
   -ms-overflow-style: none;  /* IE and Edge */
