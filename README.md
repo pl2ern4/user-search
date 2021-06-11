@@ -30,7 +30,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Production
 
-Code deployed on [https://user-search-nukiho58g-pl2ern4.vercel.app/](https://user-search-nukiho58g-pl2ern4.vercel.app/) 💅
+Code deployed on [https://user-search-git-main-pl2ern4.vercel.app/](https://user-search-git-main-pl2ern4.vercel.app/) 💅
 
 #### Things can be added :
 - Eslint for linting error
