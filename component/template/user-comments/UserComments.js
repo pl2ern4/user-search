@@ -5,7 +5,7 @@ import styles from '../../../styles/Home.module.css';
 const UserComments = ()=>{
     const [comments, setComments] = useState([]);
     useEffect(async ()=>{
-        const res = await fetch('http://jsonplaceholder.typicode.com/posts?userId=1');
+        const res = await fetch(`${window.location.protocol}//jsonplaceholder.typicode.com/posts?userId=1`);
         const json = await res.json();
         setComments(json);
     },[]);
